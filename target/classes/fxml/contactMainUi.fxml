@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="648.0" prefWidth="463.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.ContactUiController">
+    <children>
+        <TextField fx:id="txtName" layoutX="240.0" layoutY="22.0" prefHeight="42.0" prefWidth="200.0"/>
+        <TextField fx:id="txtSurname" layoutX="240.0" layoutY="90.0" prefHeight="42.0" prefWidth="200.0"/>
+        <TextField fx:id="txtNumber" layoutX="240.0" layoutY="164.0" prefHeight="42.0" prefWidth="200.0"/>
+        <Label layoutX="37.0" layoutY="27.0" prefHeight="29.0" prefWidth="171.0" text="Ad:">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="169.0" prefHeight="29.0" prefWidth="171.0" text="Number:">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="95.0" prefHeight="29.0" prefWidth="171.0" text="Soyad:">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+        <Button layoutX="37.0" layoutY="458.0" onMouseClicked="#addContact" prefHeight="67.0" prefWidth="141.0"
+                text="elave et">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <TableView fx:id="personTableView" layoutX="24.0" layoutY="246.0" prefHeight="200.0" prefWidth="416.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID"/>
+                <TableColumn fx:id="nameColumn" prefWidth="127.0" text="Ad"/>
+                <TableColumn fx:id="surnameColumn" prefWidth="116.0" text="Soyad"/>
+                <TableColumn fx:id="numberColumn" prefWidth="131.0" text="Number"/>
+            </columns>
+        </TableView>
+        <Button layoutX="278.0" layoutY="458.0" onMouseClicked="#removeContact" prefHeight="67.0" prefWidth="141.0"
+                text="sil">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Label fx:id="addLabel" layoutX="26.0" layoutY="560.0" prefHeight="54.0" prefWidth="163.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="removeLabel" layoutX="267.0" layoutY="560.0" prefHeight="54.0" prefWidth="163.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
